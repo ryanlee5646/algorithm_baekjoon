@@ -6,8 +6,8 @@ def combination(depth):
     num = 1
     for i in range(n):
       num *= tmp[i]
-    if num not in result:
-      result.append(num)
+    # if num not in result:
+    result.append(num)
     return
   
   for i in range(depth, len(data)):
@@ -22,4 +22,4 @@ tmp = []
 result = []
 
 combination(0)
-print(len(result))
+print(len(set(result)))
