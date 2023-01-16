@@ -1,6 +1,7 @@
 from sys import stdin
 input = stdin.readline
 
+
 words = list(input().strip())
 N = int(input())
 
