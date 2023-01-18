@@ -1,9 +1,9 @@
 from sys import stdin
-from collections import deque
+
 input = stdin.readline
 
 N = int(input())
-queue = deque()
+queue = []
 for _ in range(N):
   command = list(map(str, input().split()))
   
@@ -12,7 +12,7 @@ for _ in range(N):
 
   elif command[0] == 'pop':
     if queue:
-      print(queue.popleft())
+      print(queue.pop(0))
     else:
       print(-1)
   elif command[0] == 'size':
